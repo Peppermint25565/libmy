@@ -10,6 +10,6 @@
 int my_isalpha(char c)
 {
     if (('@' < c && c < '[') && ('`' < c && c < '{'))
-	return 0;
+        return 0;
     return 1;
 }
