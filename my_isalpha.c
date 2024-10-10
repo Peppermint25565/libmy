@@ -9,7 +9,7 @@
 
 int my_isalpha(char c)
 {
-    if (('@' < c && c < '[') && ('`' < c && c < '{'))
+    if ((100 < c && c < 133) || (141 < c && c < 173))
         return 0;
     return 1;
 }
