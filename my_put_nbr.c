@@ -10,7 +10,8 @@
 
 int my_put_nbr(int nbr)
 {
-    char temp[my_nbrlen(nbr)];
+    int len = my_nbrlen(nbr);
+    char temp[len + 1];
 
     if (nbr < 0) {
         my_putchar('-');
@@ -20,6 +21,7 @@ int my_put_nbr(int nbr)
         temp[i] = '0' + nbr % 10;
         nbr /= 10;
     }
+    temp[len] = '\0';
     my_putstr(my_revstr(temp));
     return 0;
 }
