@@ -6,6 +6,7 @@
 */
 
 #include "../../include/my.h"
+#include <stddef.h>
 
 int my_put_nbr(int nbr)
 {
