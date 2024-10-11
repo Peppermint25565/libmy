@@ -10,7 +10,7 @@
 
 int my_nbrlen(int nbr)
 {
-    int count = 0;
+    int count = -1;
 
     if (nbr < 0)
         nbr *= -1;
