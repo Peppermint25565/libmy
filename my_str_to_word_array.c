@@ -36,16 +36,13 @@ char **my_str_to_word_array(char const *str)
     int a = 0;
     int b = 0;
 
-    if (str == NULL)
-        return arr;
     while (arr_index != count) {
         while (my_isalphanum(str[a]) == 1 && str[a] != '\0') {
             a++;
             b++;
         }
-        while (my_isalphanum(str[b]) == 0 && str[b] != '\0'){
+        while (my_isalphanum(str[b]) == 0 && str[b] != '\0')
             b++;
-        }
         arr[arr_index] = my_strndup(str + a, b - a);
         arr_index++;
         a = b;
