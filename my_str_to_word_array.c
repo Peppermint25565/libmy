@@ -19,7 +19,7 @@ int count_arr(char const *str)
             a++;
             b++;
         }
-        while (my_isalphanum(str[b]) && str[b] != '\0') {
+        while (my_isalphanum(str[b]) == 0 && str[b] != '\0') {
             b++;
         }
         count++;
@@ -50,5 +50,6 @@ char **my_str_to_word_array(char const *str)
         arr_index++;
         a = b;
     }
+    arr[arr_index] = NULL;
     return arr;
 }
