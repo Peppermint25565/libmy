@@ -1,27 +1,24 @@
 /*
 ** EPITECH PROJECT, 2024
-** my_put_nbr
+** my_nbrlen
 ** File description:
-** my_put_nbr
+** my_nbrlen
 */
 
 #include "../../include/my.h"
 #include <stddef.h>
 
-int my_put_nbr(int nbr)
+int my_nbrlen(int nbr)
 {
-    char temp[my_nbrlen(nbr)] = "";
+    int count = 0;
 
     if (nbr == NULL)
 	return 0;
-    if (nbr < 0) {
-	my_putchar('-');
+    if (nbr < 0)
 	nbr *= -1;
-    }
     for (int i = 0; nbr != 0; i++) {
-	temp[i] = '0' + nbr % 10;
 	nbr /= 10;
+	count++;
     }
-    my_putstr(my_revstr(temp));
-    return 0;
+    return count;
 }
