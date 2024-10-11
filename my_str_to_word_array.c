@@ -13,7 +13,7 @@ int count_arr(char const *str)
     int count = 0;
     int a = 0;
     int b = 0;
-    
+
     while (str[b] != '\0') {
         while (my_isalphanum(str[a]) == 1 && str[a] != '\0') {
             a++;

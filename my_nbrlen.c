@@ -12,13 +12,11 @@ int my_nbrlen(int nbr)
 {
     int count = 0;
 
-    if (nbr == NULL)
-	return 0;
     if (nbr < 0)
-	nbr *= -1;
+        nbr *= -1;
     for (int i = 0; nbr != 0; i++) {
-	nbr /= 10;
-	count++;
+        nbr /= 10;
+        count++;
     }
     return count;
 }
