@@ -17,6 +17,10 @@ int my_put_nbr(int nbr)
         my_putchar('-');
         nbr *= -1;
     }
+    if (nbr == 0) {
+	my_putstr("0");
+	return 0;
+    }
     for (int i = 0; nbr != 0; i++) {
         temp[i] = '0' + nbr % 10;
         nbr /= 10;
