@@ -13,7 +13,7 @@ char *my_strcut(char *str, int index, int len)
 
     out[len] = '\0';
     for (int i = 0; i < len; i++) {
-	out[i] = str[index + i];
+        out[i] = str[index + i];
     }
     return out;
 }
