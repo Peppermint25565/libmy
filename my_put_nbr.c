@@ -18,8 +18,8 @@ int my_put_nbr(int nbr)
         nbr *= -1;
     }
     if (nbr == 0) {
-	my_putstr("0");
-	return 0;
+        my_putstr("0");
+        return 0;
     }
     for (int i = 0; nbr != 0; i++) {
         temp[i] = '0' + nbr % 10;
