@@ -20,6 +20,6 @@ char *my_strcat(char const *a, char const *b)
     for (int i = 0; i < len_b; i++) {
         out[len_a + i] = b[i];
     }
-    out[len_a + len_b - 1] = '\0';
+    out[len_a + len_b] = '\0';
     return out;
 }
